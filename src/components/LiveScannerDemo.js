@@ -397,6 +397,7 @@ export default function LiveScannerDemo({ onSelectIngredient }) {
                 type="file"
                 ref={fileInputRef}
                 accept="image/*"
+                capture="environment"
                 className="file-input-hidden"
                 onChange={(e) => {
                   if (e.target.files?.[0]) {

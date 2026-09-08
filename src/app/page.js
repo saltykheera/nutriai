@@ -1,7 +1,6 @@
 'use client';
 
 import { useState } from 'react';
-import AnnouncementBar from '@/components/AnnouncementBar';
 import Header from '@/components/Header';
 import Hero from '@/components/Hero';
 import LiveScannerDemo from '@/components/LiveScannerDemo';
@@ -22,7 +21,6 @@ export default function Home() {
 
   return (
     <>
-      <AnnouncementBar />
       <Header />
 
       <main>
