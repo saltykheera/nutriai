@@ -6,26 +6,6 @@ export default function Hero() {
       <div className="hero-split-container">
         {/* Left Column: Copy, Highlight, Call to Action, Trust Logos */}
         <div className="hero-left-column">
-          {/* Platform chips (iOS & Android) */}
-          <div className="platform-chips-row">
-            <div className="platform-chip">
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 6.37c.62-.75 1.04-1.8 0.92-2.85-.9.04-1.98.6-2.61 1.34-.56.64-1.05 1.71-.92 2.74 1 .08 2.01-.5 2.61-1.23z"/>
-              </svg>
-              <span>iOS</span>
-            </div>
-            <div className="platform-chip">
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="#3DDC84">
-                <path d="M17.523 15.3414c-.5511 0-.9993-.4486-.9993-1.0002 0-.5516.4482-1.0002.9993-1.0002.5516 0 1.0002.4486 1.0002 1.0002 0 .5516-.4486 1.0002-1.0002 1.0002m-11.046 0c-.5516 0-1.0002-.4486-1.0002-1.0002 0-.5516.4486-1.0002 1.0002-1.0002.5516 0 1.0002.4486 1.0002 1.0002 0 .5516-.4486 1.0002-1.0002 1.0002m11.4045-6.02l1.9973-3.4592a.416.416 0 00-.1521-.5676.416.416 0 00-.5676.1521l-2.0223 3.503C15.5802 8.3976 13.8443 8.0838 12 8.0838c-1.8444 0-3.5803.3138-5.1368.866L4.8409 5.4468a.4161.4161 0 00-.5677-.1521.4157.4157 0 00-.1521.5676l1.9973 3.4592C2.6889 11.1867.3432 14.6589 0 18.761h24c-.3432-4.1021-2.6889-7.5743-6.1185-9.4396"/>
-              </svg>
-              <span>Android</span>
-            </div>
-            <div className="platform-chip platform-chip-web">
-              <span className="chip-dot-live"></span>
-              <span>Web Scanner Available</span>
-            </div>
-          </div>
-
           <p className="hero-eyebrow">
             Go from confusing fine print to <strong>instant dietary clarity</strong>.
           </p>
@@ -40,12 +20,9 @@ export default function Hero() {
             Decode your food in seconds with AI, not guesswork.
           </h1>
 
+          {/* Minimized Clean One-Liner */}
           <p className="hero-split-desc">
-            NutriLens AI gives you the complete food intelligence engine, with label OCR, additive safety ratings, personalized allergy alerts, and automatic consumption tracking already built and ready to protect your health.
-          </p>
-
-          <p className="hero-split-subdesc">
-            Point your camera at any food label to reveal hidden sugars, harmful preservatives, and allergen triggers tailored to your personal dietary profile.
+            Point your camera at any food label to instantly reveal hidden additives, verify personal allergens, and log nutrition in seconds.
           </p>
 
           {/* Clean Primary CTA Button */}
@@ -57,15 +34,20 @@ export default function Hero() {
 
           <div className="hero-hairline-divider"></div>
 
-          {/* Works with Section (Matching reference lower block) */}
+          {/* Works with Section Formatted as a Clean List */}
           <div className="hero-works-with-section">
             <h4 className="works-with-heading">Works with the dietary standards you trust</h4>
-            <p className="works-with-text">
-              Cross-references ingredients against certified medical allergen databases, European Food Safety Authority indexes, and FDA compliance standards in under 400 milliseconds.
-            </p>
-            <p className="works-with-sub">
-              <strong>Prefer clean eating?</strong> The AI automatically flags palm oil, synthetic emulsifiers, and artificial chemical food dyes.
-            </p>
+            
+            <ul className="hero-standards-list">
+              <li>
+                <span className="list-check-icon">✓</span>
+                <span>Cross-references certified medical allergen databases, EFSA indexes, and FDA compliance in &lt;400ms.</span>
+              </li>
+              <li>
+                <span className="list-check-icon">✓</span>
+                <span><strong>Clean Eating Guard:</strong> Auto-flags palm oil, synthetic emulsifiers, and artificial chemical food dyes.</span>
+              </li>
+            </ul>
 
             {/* Standard / Technology Badges */}
             <div className="trust-logos-row">
